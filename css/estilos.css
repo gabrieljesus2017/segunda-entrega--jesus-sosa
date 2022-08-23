@@ -1,0 +1,112 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+  background-color:black;
+  text-decoration: none;
+  color:white;
+  }
+  header{
+      width: 100%;
+  }
+.texto{
+  position: inherit;
+  top: 5px;
+  left: 10px;
+  color:black;
+}
+
+  
+
+body{
+  height: 100%;
+}
+img.redimension{
+  width: 35%;
+  height: 90%;
+
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "imagen-uno imagen-dos"
+  "imagen-tres imagen-cuatro";
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-row-gap: 50px ;
+  
+ }
+ 
+ .imagen-uno{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.imagen-dos{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.imagen-tres{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+ 
+}
+.imagen-cuatro{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+/*color del footer y altura de el*/
+footer{
+    background-color:black;
+padding: 3px;  
+position: absolute ;
+width: 100%;
+height: 20%;
+}
+
+  
+  footer nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+  }
+  
+  footer nav ul li a{
+    text-decoration: none;
+    color:white;
+  }
+  
+  footer h2{
+    text-align: center;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 800px){
+
+  }
+  header nav ul {
+      display: flex;
+      column-gap: 70px;
+      
+      }
+      @media screen and (max-width: 320px) {
+ 
+   
+      header nav ul {
+          display: flex;
+          column-gap: 1px;
+      }
+      footer nav ul li{ display: none;
+
+      }
+      }
